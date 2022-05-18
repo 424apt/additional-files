@@ -1,0 +1,80 @@
+--------------------------------------------------------
+Instructions to make local changes to project.mobirise for 424apt.com.
+
+Install Mobirise 5.6.8.
+Login as davidanderson61 at GitHub website.
+  Download 424apt/424apt.github.io as zip.
+Open Mobirise and login as davidanderson61@gmail.com.
+Goto Account>App Settings
+  Turn on the following:
+    Top Toolbar
+      Show Page & Site Names
+      Show All Views
+      Show Redo
+    APP
+      Show All Block Buttons
+      Show Site Styles Button
+Goto Sites>Import Mobirise Site>Open ~/Downloads/424apt.github.io-master/project.mobirise.
+Make changes.
+--------------------------------------------------------
+# Make sure the ~/.gitconfig file contains the following.
+[core]
+        excludesfile = /Users/davidanderson/.gitignore_global
+        editor = nano
+[user]
+        name = David Anderson
+        email = davidanderson61@gmail.com
+--------------------------------------------------------
+# Make sure the ~/.gitignore_global file contains the following.
+*~
+.DS_Store
+--------------------------------------------------------
+Instructions to publish 424apt.com to repository 424apt/424apt.github.io.
+
+Login as davidanderson61 at GitHub website.
+  If necessary, regenerate token.
+    Click your profile photo, then click Settings.
+    In the left sidebar, click <> Developer settings.
+    In the left sidebar, click Personal access tokens.
+    Select token "For repositories".
+    Click Regenerate token.
+    Leave page open to copy token later.
+Update login keychain if Internet password item named github.com exists.
+  Set account to davidanderson61.
+  Set password to regenerated token or 424apt's token.
+Clone repository 424apt/424apt.github.io.
+Open Mobirise.
+Select Publish.
+  Select Local drive folder.
+  Select 424apt.github.io folder containing the repository.
+  Select the "Publish" button.
+In a Terminal window:
+  Stage changes.
+  Commit changes.
+  Push changes to GitHub.
+Publishing is not immediate!  
+--------------------------------------------------------
+Instructions to copy a repository to another GitHub user.
+
+Login to GitHub as from-user.
+git clone --bare https://github.com/from-user/from-repo.git
+Login to GitHub as to-user.
+  If necessary, regenerate token
+    Click your profile photo, then click Settings.
+    In the left sidebar, click <> Developer settings.
+    In the left sidebar, click Personal access tokens.
+    Select token "For repositories".
+    Click Regenerate token.
+    Leave page open to copy token later.
+  Create a new to-repo repository.
+Update login keychain if Internet password item named github.com exists.
+  Set account to to-user.
+  Set password to regenerated token.
+cd from-repo.git
+git push --mirror https://github.com/to-user/to-repo.git
+cd ..
+rm -rf from-repo.git
+--------------------------------------------------------
+IP for old A records in Cloudflare.
+192.30.252.154
+192.30.252.153
