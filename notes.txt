@@ -36,6 +36,7 @@ Login as davidanderson61 at GitHub website.
     Click your profile photo, then click Settings.
     In the left sidebar, click <> Developer settings.
     In the left sidebar, click Personal access tokens.
+    In the left sidebar, click Tokens (classic).
     Select token "For repositories".
     Click Regenerate token.
     Leave page open to copy token later.
