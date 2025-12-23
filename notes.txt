@@ -19,7 +19,7 @@ Make changes.
 --------------------------------------------------------
 # Make sure the ~/.gitconfig file contains the following.
 [core]
-        excludesfile = /Users/davidanderson/.gitignore_global
+        excludesfile = ~/.gitignore_global
         editor = nano
 [user]
         name = David Anderson
@@ -28,6 +28,7 @@ Make changes.
 # Make sure the ~/.gitignore_global file contains the following.
 *~
 .DS_Store
+project-*.mobirise_history
 --------------------------------------------------------
 Instructions to publish 424apt.com to repository 424apt/424apt.github.io.
 
